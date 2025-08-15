@@ -1,0 +1,13 @@
+about: "I’m a 14-year-old student passionate about digital forensics, robotic engineering, and public speaking."
+projects:
+  - title: "TryHackMe: Intro to Cyber"
+    description: "I learned Nmap scanning and port enumeration."
+    link: "#"
+speeches:
+  - title: "Freedom Shouldn't Come with Conditions"
+    description: "Reflecting on feminism and power."
+    link: "#"
+blog:
+  - title: "Coming soon..."
+    description: ""
+    link: "#"
