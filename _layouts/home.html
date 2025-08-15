@@ -1,0 +1,46 @@
+---
+layout: default
+---
+
+<section class="hero-banner">
+  <img src="{{ '/assets/img/banner.avif' | relative_url }}" class="img-banner" data-aos="fade-right">
+  <div class="hero-text" data-aos="fade-left">
+    <h1>Ajuni Dang — Securing the future, one word and one line of code at a time.</h1>
+    <p>Student. Speaker. Cybersecurity explorer.<br>Building the future, and questioning it too</p>
+    <div class="cta-buttons">
+      <a href="/projects.html">Explore My Work</a>
+      <a href="/blog.html">Read My Blog</a>
+    </div>
+  </div>
+</section>
+
+<section class="Homepage" data-aos="fade-up">
+  <h2>About Me</h2>
+  <p>{{ site.data.highlights.about }} <a href='/about'>Read more</a></p>
+</section>
+
+<section class="section" data-aos="fade-up">
+  <h2>Highlights</h2>
+  <div class="highlight-box">
+    {% for project in site.data.highlights.projects %}
+    <div class="highlight">
+      <h3>💻 {{ project.title }}</h3>
+      <p>{{ project.description }} <a href="{{ project.link }}">Read more</a></p>
+    </div>
+    {% endfor %}
+
+    {% for speech in site.data.highlights.speeches %}
+    <div class="highlight">
+      <h3>🎤 {{ speech.title }}</h3>
+      <p>{{ speech.description }} <a href="{{ speech.link }}">Read more</a></p>
+    </div>
+    {% endfor %}
+
+    {% for blog in site.data.highlights.blog %}
+    <div class="highlight">
+      <h3>🧠 {{ blog.title }}</h3>
+      <p>{{ blog.description }} <a href="{{ blog.link }}">Read more</a></p>
+    </div>
+    {% endfor %}
+  </div>
+</section>
